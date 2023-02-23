@@ -23,8 +23,18 @@ void Screen :: drawUpDimmer(float valeur,float min, float max, byte column)
   fillRect(column*8, 64-valeur, 8, valeur, WHITE);
 }
 
-void Screen :: drawCircleDimmer(float valeur,float min, float max)
-{
+// void Screen :: drawCircleDimmer(float valeur,float min, float max)
+// {
 
+// }
+
+void Screen :: showPercentage(bool show)
+{
+  _showPercent = show;
+}
+
+void Screen :: centerPrint(String message, int line, int textSize)
+{
+  
 }
 

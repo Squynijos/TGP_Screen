@@ -10,9 +10,11 @@ Screen  KEYWORD1
 #######################################
 # Methods and Functions (KEYWORD2)
 #######################################
-drawSideDimmer  KEYWORDS2
-drawUpDimmer    KEYWORDS2
-effacerUp   KEYWORDS2
+drawSideDimmer  KEYWORD2
+drawUpDimmer    KEYWORD2
+effacerUp   KEYWORD2
+showPercentage  KEYWORD2
+centerPrint KEYWORD2
 
 ######################################
 # Constants (LITERAL1)
