@@ -23,4 +23,8 @@ void Screen :: drawUpDimmer(float valeur,float min, float max, byte column)
   fillRect(column*8, 64-valeur, 8, valeur, WHITE);
 }
 
-//void Screen :: drawTriDimmer (float valeur,float min, float max, bool)
+void Screen :: drawCircleDimmer(float valeur,float min, float max)
+{
+
+}
+
