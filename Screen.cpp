@@ -20,7 +20,13 @@ void Screen :: drawUpDimmer(float valeur,float min, float max, byte column)
   fillRect(column*8, 64-valeur, 8, valeur, WHITE);
 }
 
+void Screen :: drawCircleDimmer(float valeur,float min, float max)
+{
+
+}
+
 void Screen :: effacerUp(byte column)
 {
   fillRect(column*8, 0, 8, 64, BLACK);
 }
+
