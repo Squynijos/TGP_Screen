@@ -17,7 +17,7 @@ void Screen :: drawUpDimmer(float valeur,float min, float max, byte column)
   valeur =((valeur-min) * 64/(max-min));
   effacerUp(column);
   drawRect(column*8, 0, 8, 64, WHITE);
-  fillRect(column*8, 64-valeur, 8, 64-valeur, WHITE);
+  fillRect(column*8, 64-valeur, 8, valeur, WHITE);
 }
 
 void Screen :: effacerUp(byte column)
