@@ -1,0 +1,24 @@
+#######################################
+# Syntax Coloring Map for TGP Ecran
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+Ecran   KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+begin	KEYWORD2
+ecrire	KEYWORD2
+dessinerPixel	KEYWORD2
+effacer	KEYWORD2
+setSplashVisible	KEYWORD2
+getSplashVisible	KEYWORD2
+
+setWrapLine	KEYWORD2
+getWrapLine	KEYWORD2
+######################################
+# Constants (LITERAL1)
+#######################################
