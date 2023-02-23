@@ -17,6 +17,7 @@ class Screen : public Ecran
 {
     public:
         Screen(int8_t reset_pin = OLED_RESET);
+        void drawRectDimmer(float valeur, float min, float max, int ligne=1);
 
     private:
 
