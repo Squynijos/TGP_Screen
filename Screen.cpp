@@ -22,5 +22,5 @@ void Screen :: drawUpDimmer(float valeur,float min, float max, byte column)
 
 void Screen :: effacerUp(byte column)
 {
-    fillRect(colomn*8, 0, 8, 64, BLACK);
+    fillRect(column*8, 0, 8, 64, BLACK);
 }
