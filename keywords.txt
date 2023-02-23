@@ -5,12 +5,14 @@
 #######################################
 # Datatypes (KEYWORD1)
 #######################################
-Screen   KEYWORD1
+Screen  KEYWORD1
 
 #######################################
 # Methods and Functions (KEYWORD2)
 #######################################
-
+drawSideDimmer  KEYWORDS2
+drawUpDimmer    KEYWORDS2
+effacerUp   KEYWORDS2
 
 ######################################
 # Constants (LITERAL1)
