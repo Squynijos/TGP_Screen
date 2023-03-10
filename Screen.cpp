@@ -33,8 +33,23 @@ void Screen :: showPercentage(bool show)
   _showPercent = show;
 }
 
+/*
+  Functions to print text on the screen
+*/
 void Screen :: centerPrint(String message, int line, int textSize)
 {
   
+}
+
+void Screen :: displayTxt(String message, int line, int textSize)
+{
+  effacer(line, textSize);
+  ecrire(message, line, textSize);
+}
+
+void Screen :: displayNbr(int message, int line, int textSize)
+{
+  effacer(line, textSize);
+  ecrire(message, line, textSize);
 }
 

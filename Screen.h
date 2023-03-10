@@ -23,6 +23,8 @@ class Screen : public Ecran
         void drawUpDimmer(float valeur, float min, float max, byte column=15);
         void showPercentage(bool show);
         void centerPrint(String message, int line=0, int textSize=1);
+        void displayTxt(String message, int line=0, int textSize=1);
+        void displayNbr(int message, int line=0, int textSize=1);
 
     private:
         bool _showPercent=false;
