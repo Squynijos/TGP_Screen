@@ -1,12 +1,27 @@
+
 #include "Screen.h"
 
+/*#######################
+  Variables and Constants
+#######################*/
+bool _showPercent;
+
+/*##################################
+  Constructor for the Screen Object
+##################################*/
 Screen::Screen(int8_t reset_pin) : Ecran(reset_pin) {}
 
+/*##########
+  Utilities
+###########*/
 void Screen :: effacerUp(byte column)
 {
   fillRect(column*8, 0, 8, 64, BLACK);
 }
 
+/*#############################
+  Functions to create a dimmer
+#############################*/
 void Screen :: drawSideDimmer(float valeur,float min, float max, byte ligne)
 {
   valeur = (valeur-min) * 128/(max-min);
@@ -33,9 +48,9 @@ void Screen :: showPercentage(bool show)
   _showPercent = show;
 }
 
-/*
+/*#####################################
   Functions to print text on the screen
-*/
+#####################################*/
 void Screen :: centerPrint(String message, int line, int textSize)
 {
   
@@ -51,5 +66,14 @@ void Screen :: displayNbr(int message, int line, int textSize)
 {
   effacer(line, textSize);
   ecrire(message, line, textSize);
+}
+
+/*#####################################
+  Functions to create a loading screen
+#####################################*/
+
+void Screen :: loadingDotScreen()
+{
+  displayTxt("Loading", 0, 1); 
 }
 
