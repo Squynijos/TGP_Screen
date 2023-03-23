@@ -22,12 +22,18 @@ void Screen :: effacerUp(byte column)
 /*#############################
   Functions to create a dimmer
 #############################*/
-void Screen :: drawSideDimmer(float valeur,float min, float max, byte ligne)
+void Screen :: drawSideDimmer(float valeur,float min, float max, byte line)
 {
   valeur = (valeur-min) * 128/(max-min);
-  effacer(ligne);
-  drawRect(0, ligne*8, 128, 8, WHITE);
-  fillRect(0, ligne*8, valeur, 8, WHITE);
+  effacer(line);
+  drawRect(0, line*8, 128, 8, WHITE);
+  fillRect(0, line*8, valeur, 8, WHITE);
+
+  if(_showPercent)
+  {
+    byte percentage = valeur / 128 * 100;
+    displayTxt(String(valeur) + "%", line, 1);
+  }
 }
 
 void Screen :: drawUpDimmer(float valeur,float min, float max, byte column)
@@ -65,15 +71,15 @@ void Screen :: displayTxt(String message, int line, int textSize)
 void Screen :: displayNbr(int message, int line, int textSize)
 {
   effacer(line, textSize);
-  ecrire(message, line, textSize);
+  ecrire(String(message), line, textSize);
 }
 
 /*#####################################
   Functions to create a loading screen
 #####################################*/
 
-void Screen :: loadingDotScreen()
-{
-  displayTxt("Loading", 0, 1); 
-}
+// void Screen :: loadingDotScreen()
+// {
+//   displayTxt("Loading", 0, 1); 
+// }
 

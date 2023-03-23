@@ -25,7 +25,7 @@ class Screen : public Ecran
         void centerPrint(String message, int line=0, int textSize=1);
         void displayTxt(String message, int line=0, int textSize=1);
         void displayNbr(int message, int line=0, int textSize=1);
-        void loadingScreen();
+        // void loadingScreen();
 
     private:
         bool _showPercent=false;
